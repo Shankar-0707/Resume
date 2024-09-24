@@ -114,6 +114,10 @@ section h2, section h3 {
     -webkit-text-fill-color: transparent;
 }
 
+#thanks{
+    text-align: center;
+}
+
 section {
     margin-bottom: 20px;
 }
