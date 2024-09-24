@@ -24,6 +24,12 @@ body {
     animation: fadeInUp 1s ease-in-out;
 }
 
+.mobile{
+    color: #2193b0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* Header styling */
 header {
     text-align: center;
@@ -53,6 +59,48 @@ header a:hover {
     color: #2c3e50;
     text-decoration: underline;
 }
+
+button.button3 {
+    background-color: #00d38c;
+    width: 45px;
+    height: 45px;
+    font-size: 100%;
+    border: none;
+    border-radius: 1000px;
+    font-size: 120%;
+  
+    padding-top: 0.5vw;
+    position: fixed;
+    top: auto;
+    bottom: 45px;
+    left: auto;
+    right: 280px;
+  }
+  
+
+#navlist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.navlistitems a{
+    text-decoration: none;
+    color: #ff758c;
+
+}
+
+.navlistitems a:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    color: #2193b0;
+    /* font-size: 150%; */
+}
+
+
 
 /* Section headings */
 section h2, section h3 {
@@ -108,13 +156,13 @@ section {
 }
 
 /* Skills styling */
-.skills ul {
+#skills ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
 }
 
-.skills ul li {
+#skills ul li {
     background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
     color: #fff;
     padding: 10px;
@@ -125,7 +173,7 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills ul li:hover {
+#skills ul li:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -156,7 +204,7 @@ section {
         font-size: 20px;
     }
 
-    .skills ul {
+    #skills ul {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
