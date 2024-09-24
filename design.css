@@ -1,0 +1,162 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container */
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 16px;
+    color: #34495e;
+}
+
+header a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Section headings */
+section h2, section h3 {
+    font-size: 24px;
+    color: #34495e;
+    border-bottom: 2px solid #6dd5ed;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    background: linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Jobs and experience */
+.job h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.job ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.job ul li {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+/* Project links */
+#projects ul {
+    margin-left: 20px;
+}
+
+#projects ul li {
+    margin-bottom: 5px;
+}
+
+#projects ul li a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#projects ul li a:hover {
+    color: #ff758c;
+    text-decoration: underline;
+}
+
+/* Skills styling */
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.skills ul li {
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade in animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .resume-container {
+        padding: 15px;
+    }
+
+    section h2, section h3 {
+        font-size: 20px;
+    }
+
+    .skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
